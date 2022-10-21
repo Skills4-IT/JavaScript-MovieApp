@@ -29,7 +29,17 @@ const showMovies = (data) => {
             const box = document.createElement("div")
             box.classList.add("box")
             box.innerHTML = `
-                <img src="${imagePath}" alt="" />
+                            <center>
+                            <div class="card" style="width: 21rem; height: 30rem">
+                            <img class="card-img-top" src="${imagePath}" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">${result.original_title}/h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <a href="#" class="btn btn-primary"> ${result.vote_average} </a>
+                            </div>
+                            </div>
+                        </center>
+                <img src="" alt="" />
                 <div class="overlay">
                     <div class="title"> 
                         <h2> ${result.original_title}  </h2>
